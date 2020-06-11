@@ -20,15 +20,15 @@
         // Initiate Variables With Form Content
         var name = $("#name").val();
         var email = $("#email").val();
-        var msg_subject = $("#msg_subject").val();
-        var phone_number = $("#phone_number").val();
+        var subject = $("#subject").val();
+        var phone = $("#phone").val();
         var message = $("#message").val();
 
 
         $.ajax({
             type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
+            url: "mail.php",
+            data: "name=" + name + "&email=" + email + "&subject=" + subject + "&phone=" + phone + "&message=" + message,
             success : function(text){
                 if (text == "success"){
                     formSuccess();

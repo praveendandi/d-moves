@@ -4198,7 +4198,7 @@ Page Title Area CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background-image: url(https://templates.envytheme.com/tracer/assets/img/funfacts/bg.jpg);
+  background-image: url(../../assets/img/footer-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1933,7 +1933,7 @@ Services Section CSS
 }
 
 .single-services-box h3 {
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 18px;
   margin-bottom: 10px;
   color: #202647;
@@ -7520,4 +7520,13 @@ min-height: 380px;
   display: block;
   width: auto;
   height: 300px;
+}
+
+.single-services-box .btn-outline-dark{
+  background: #fff;
+  border: 0;
+  box-shadow: 0 0 4px #9dc5e2;
+}
+.single-services-box .btn-outline-dark:hover{
+  color: #01082d;
 }

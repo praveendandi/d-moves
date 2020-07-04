@@ -7530,3 +7530,94 @@ min-height: 380px;
 .single-services-box .btn-outline-dark:hover{
   color: #01082d;
 }
+
+.career {
+  padding: 15px 20px;
+  box-shadow: -1px 1px 9px 0 rgba(198, 121, 227, 0.25);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: #666;
+}
+
+.career ul li {
+  display: inline-block;
+  padding: 5px 15px 5px 0
+}
+.career ul{padding: 0;margin: 0;}
+.career h5{color: #0e314c;font-weight: 600;}
+.career {
+  padding: 15px 20px;
+  box-shadow: -1px 1px 9px 0 rgba(198, 121, 227, 0.25);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: #666
+}
+.career .btn-primary {
+  margin-top: 15px;
+  color: #fff;
+}
+.career a {
+  color: #fff;
+}
+.career-details {
+  padding: 20px 20px 60px 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+.career-details ul{padding: 0;margin: 0;list-style: none;}
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.career-details ul li {
+  padding: 5px 0;
+  color: #6a6c72;
+}
+
+.list-inline1 li {
+  display: inline-block;
+  padding: 5px 15px 0 0!important;
+}
+
+
+
+.career-details h5 {
+  padding: 15px 0 5px;
+}
+
+.socil-share ul li {
+  text-align: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px 2px 0;
+  background: #fff;
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+
+.career-details .btn-primary {
+  color: #ffffff;
+  position: relative;
+  background: linear-gradient(60deg, #f20791, #f20791);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  padding: 8px 15px;
+  border: 0;
+}
+
+.career .btn-primary, .modal-footer .btn-primary {
+  color: #ffffff;
+  position: relative;
+  background: linear-gradient(60deg, #f20791, #f20791);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  padding: 8px 15px;
+  border: 0;
+}
+.modal-content{border: 0 !important;}
+.modal-content label{font-size: 13px;font-weight: 600;}
+.modal .form-control:focus{box-shadow: none;}
+.modal-header.custom-header .close{color: #fff !important;}
+.modal-header.custom-header{background: #f20791;border: 0;color: #fff;}

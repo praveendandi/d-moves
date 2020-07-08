@@ -288,12 +288,13 @@
 
                 <div class="col-lg-6">
 
+                    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRf6hGR-qEjVz8cB09afH9hrKzcVBtKTbyiWAVsWo-PRsWTw/viewform?embedded=true" width="540" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
                     <form id="contactForm" role="form">
                         <h4 class="mb-3">Enquiry Form</h4>
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required=""
+                                    <input type="text" name="name" id="name" class="form-control" required=""
                                         data-error="Please enter your name" placeholder="Your Name">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -301,7 +302,7 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required=""
+                                    <input type="email" name="email" id="email" class="form-control" required=""
                                         data-error="Please enter your email" placeholder="Your Email">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -309,7 +310,7 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" name="mobile" required="" data-error="Please enter your number"
+                                    <input type="text" name="phone" id="phone" required="" data-error="Please enter your number"
                                         class="form-control" placeholder="Your Phone">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -317,7 +318,7 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" required=""
+                                    <input type="text" name="subject" id="subject" class="form-control" required=""
                                         data-error="Please enter your subject" placeholder="Your Subject">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -325,7 +326,7 @@
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control textarea-hight" cols="30" rows="5"
+                                    <textarea name="message" id="message" class="form-control textarea-hight" cols="30" rows="5"
                                         required="" data-error="Write your message"
                                         placeholder="Your Message"></textarea>
                                     <div class="help-block with-errors"></div>
@@ -333,7 +334,7 @@
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button onclick="myFunction()" name="submit" type="submit" class="send-btn-one disabled"
+                                <button name="submit" type="submit" class="send-btn-one disabled"
                                     style="pointer-events: all; cursor: pointer;">
                                     Send
                                 </button>
@@ -361,7 +362,8 @@
                             It was just a lesson, not a life sentence”</p>
 
                         <div>
-                            <a class="text-white" target="_blank" href="http://www.luangta.com/">http://www.luangta.com/</a>
+                            <a class="text-white" target="_blank"
+                                href="http://www.luangta.com/">http://www.luangta.com/</a>
                         </div>
                         <!-- <ul class="footer-social">
                             <li>
@@ -441,7 +443,7 @@
                         <i class="flaticon-placeholder-filled-point"></i>
                         <span>Dragons Move Co.,Ltd.
                             72 Ramkhamhaeng 26/1, Hua-Mak,
-                             Bangkapi, Bangkok, Thailand, 10240</span>
+                            Bangkapi, Bangkok, Thailand, 10240</span>
                     </div>
                 </div>
             </div>
@@ -563,13 +565,51 @@
     <!-- Contact JS -->
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_vWuWb8cE6l8h8J2Jer86a");
+        })();
+    </script>
     <script>
         function openMneu() {
             $('.mobile-menu').toggle("slide");
         }
     </script>
-    
+
+    <script>
+        $('#contactForm').on('submit', function (event) {
+            event.preventDefault(); // prevent reload
+            var data = {
+                service_id: 'gmail',
+                template_id: 'contact',
+                user_id: 'user_vWuWb8cE6l8h8J2Jer86a',
+                template_params: {
+                   "name" : $("#name").val(),
+                   "email" : $("#email").val(),
+                   "phone" : $("#phone").val(),
+                   "subject" : $("#subject").val(),
+                   "message" : $("#message").val()
+                }
+            };
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function () {
+                window.location.href = "thankyou.html";
+            }).fail(function (error) {
+                alert('Oops... ' + JSON.stringify(error));
+            });
+
+
+        });
+    </script>
+
+    <script>
+       
+    </script>
+
 </body>
 
 </html>

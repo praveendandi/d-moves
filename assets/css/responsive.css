@@ -4,6 +4,7 @@
     width: auto;
     height: auto;
   }
+  .m-btn{position: absolute;top: 0;right: 0;z-index: 9999;}
   .custom-mobile-menu{display: block !important;}
   .section-title {
     margin-bottom: 40px;
@@ -11,7 +12,8 @@
   .section-title span {
     font-size: 13px;
   }
-  .section-title h3 {
+
+  .section-title h3 span {
     font-size: 22px;
     margin: 8px 0 0 0;
   }

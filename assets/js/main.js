@@ -323,11 +323,23 @@
 		$("#validator-newsletter").removeClass().addClass(msgClasses).text(msg);
 	}
 	
-	// AJAX MailChimp
-	$(".newsletter-form").ajaxChimp({
-		url: "https://envytheme.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
-		callback: callbackFunction
-	});
+	(function($){
+        $.fn.languageSwitcher = function(lang){
+          $.each(this, function(index, value) {
+            if (lang == $(value).attr("lang")) {
+              $(value).css("display", "inline");
+            } else {
+              $(value).css("display", "none");
+            }
+          });      
+          return this;
+        }
+      }(jQuery));
+
+
+      $("input[type=radio]").change(function() {
+          $("span[lang]").languageSwitcher( $(this).attr("id") );
+        });
     
     // Preloader
 	jQuery(window).on('load', function() {

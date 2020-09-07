@@ -337,13 +337,26 @@
       }(jQuery));
 
 
+
+
+
       $("input[type=radio]").change(function() {
-          $("span[lang]").languageSwitcher( $(this).attr("id") );
+          $("span[lang]").languageSwitcher( $(this).attr("id"));
+          window.localStorage.setItem('LANG',$(this).attr("id"));
         });
     
     // Preloader
 	jQuery(window).on('load', function() {
-		$('.preloader').fadeOut();
+        $('.preloader').fadeOut();
+        var lang = window.localStorage.getItem('LANG');
+        if(lang){
+            $("span[lang]").languageSwitcher(lang);
+            $(`#${lang}`).prop( "checked", true );
+            $(`label[for="${lang}"]`).addClass('active');
+            $(`label[for="${lang == 'en' ? 'th':'en'}"]`).removeClass('active');
+
+        }
+        
     });
     
     

@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- FlatIcon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Odometer Min CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Font Awesome Min CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>Dragons Move</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f83e9e61aeee50012fb7c74&product=inline-share-buttons" async="async"></script>
+    <style>
+        strong{
+            font-weight: 700;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area navbar-two">
+        <div class="custom-mobile-menu">
+            <i class="fa fa-bars" onclick="openMneu()"></i>
+        </div>
+        <div class="crimso-responsive-nav">
+            <div class="container">
+                <div class="crimso-responsive-menu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/Logo-Dragons-Move_N.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="btn-group c-btn m-btn btn-group-toggle" data-toggle="buttons">
+                        <label for="th" class="btn btn-primary active">
+                          <input id="th" type="radio" name="options" id="option1" autocomplete="off" checked> Thai
+                        </label>
+                        <label for="en" class="btn btn-primary">
+                          <input id="en" type="radio" name="options" id="option2" autocomplete="off"> English
+                        </label>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crimso-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/Logo-Dragons-Move_N.jpg" alt="logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link"> <span lang="th">หน้าหลัก</span> <span lang="en">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link"> <span lang="en">About Us</span> <span lang="th">เกี่ยวกับเรา</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><span lang="en">Services & Products</span> <span lang="th">สินค้าและบริการ</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h6 class="font-weight-bold text-danger"><span lang="en">Network Solutions</span> <span lang="th">โซลูชันเครือข่าย</span></h6>
+                                            <li class="nav-item">
+                                                <a href="vpn-solutions.html" class="nav-link"><span lang="en">VPN Solutions</span> <span lang="th">โซลูชันแบบวีพีเอ็น หรือระบบเครือข่ายแบบจําลอง</span></a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="system-solution.html" class="nav-link"><span lang="en">Monitoring System
+                                                    Solution</span> <span lang="th">โซลูชันการตรวจจับและดูแลระบบ </span></a>
+                                            </li>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="font-weight-bold text-danger"><span lang="en">Security Solutions</span> <span lang="th">โซลูชันด้านความปลอดภัย</span></h6>
+                                            <li class="nav-item">
+                                                <a href="vulnerability-assessment.html" class="nav-link"><span lang="en">Vulnerability
+                                                    Assessment</span> <span lang="th">การประเมินหาความเสี่ยงของระบบ</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="penetration-testing.html" class="nav-link"><span lang="en">Penetration
+                                                    Testing</span> <span lang="th">การทดสอบเจาะระบบ</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="web-application-penetration-testing.html" class="nav-link"><span lang="en">Web
+                                                    Application Penetration Testing</span> <span lang="th">การทดสอบเจาะระบบแอปพลิเคชันสําหรับเว็บไซต</span></a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="mobile-application-penetration-testing.html"
+                                                    class="nav-link"><span lang="en">Mobile Application Penetration Testing</span> <span lang="th">การทดสอบเจาะระบบแอปพลิเคชันสําหรับมือถือ</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="secure-code-review.html" class="nav-link"><span lang="en">Secure Code
+                                                    Review</span> <span lang="th">การตรวจสอบรหัสความปลอดภัยของระบบ</span></a>
+                                            </li>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="font-weight-bold text-danger"><span lang="en">Application Technologies</span> <span lang="th">เทคโนโลยีแอปพลิเคชัน</span></h6>
+
+
+
+                                            <li class="nav-item">
+                                                <a href="appkeelaa.html" class="nav-link">AppKeelaa</a>
+                                            </li>
+
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="news.html" class="nav-link active"><span lang="en">News & Activities</span> <span lang="th">ข่าวสารและกิจกรรม</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="partnership.html" class="nav-link"><span lang="en">Partnership</span> <span lang="th">พันธมิตรของเรา</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="jobs.html" class="nav-link"><span lang="en">Jobs</span> <span lang="th">ตําแหน่งที่ต้องการ</span></a>
+                            </li>
+
+
+
+
+
+
+
+
+
+
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link"><span lang="en">Contact Us</span> <span lang="th">ติดต่อเรา</span></a>
+                            </li>
+
+                            <div class="btn-group c-btn m-btn btn-group-toggle" data-toggle="buttons">
+                        <label for="th" class="btn btn-primary active">
+                          <input id="th" type="radio" name="options" id="option1" autocomplete="off" checked> Thai
+                        </label>
+                        <label for="en" class="btn btn-primary">
+                          <input id="en" type="radio" name="options" id="option2" autocomplete="off"> English
+                        </label>
+                     </div>
+
+                        </ul>
+
+                        <div class="others-options">
+                            <div class="burger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <div class="sidebar-modal">
+        <div class="sidebar-modal-inner home-banner-two">
+
+            <div class="banner-form">
+                <h4 class="text-center text-capitalize mb-2">For Staff</h4>
+                <form>
+                    
+
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="email" class="form-control" placeholder="User Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+
+            <span class="close-btn sidebar-modal-close-btn"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+
+    <div class="page-title-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h2><span lang="en">News & Activities</span> <span lang="th">ข่าวสารและกิจกรรม
+                            </span>
+                        </h2>
+                        <ul>
+                            <li><a href="index.html"><span lang="en">Home</span> <span lang="th">หน้าหลัก</span> </a></li>
+                            <li><span lang="en">News & Activities</span> <span lang="th">ข่าวสารและกิจกรรม</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-details-area ptb-100 py-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 offset-md-2">
+                    <div class="blog-details-desc">
+                        
+                        <div class="article-content">
+                            
+
+                            <h3>สรุปภาพรวมของ พรบ.คุ้มครองข้อมูลส่วนบุคคล (PDPA)</h3>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="entry-meta mb-2">
+                                        <ul class="mb-0">
+                                            <li><span>Posted By:</span> <a href="#">ชลัช  โลกิตถจริยา</a></li><br>
+                                            <li><span>Posted On:</span> <a href="#">07-10-2020</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 my-auto">
+                                    <div class="sharethis-inline-share-buttons"></div>
+                                </div>
+                            </div>
+
+                            
+
+                            <p>ผู้ประกอบการหลายๆท่านคงจะทราบกันดีแล้วว่า ตามกำหนดการ ในวันที่ 27 พฤษภาคม 2563 พรบ. คุ้มครองข้อมูลส่วนบุคคล จะมีผลบังคับใช้สมบูรณ์ โดยในขณะนี้ทาง ครม.ได้เลื่อนใช้ พรบ. นี้ออกไปอีก 1 ปี แต่ในท้ายที่สุด พรบ.นี้ก็จะต้องมีผลบังคับใช้ เพียงแต่ผู้ประกอบการมีเวลาได้หายใจในการเตรียมตัวมากขึ้น และเพื่อเป็นการเตรียมความพร้อมให้กับผู้ประกอบการ ทาง บริษัท ดราก้อนมูฟว์ จำกัด จึงได้สรุปสาระสำคัญเกี่ยวกับ พรบ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) มาให้ทำความเข้าใจเพื่อที่จะได้ปฏิบัติได้ตรงตามเงื่อนไขและข้อกำหนดใน พรบ. ฉบับนี้ครับ</p>
+
+                            <p>โดยหลักกฎหมายที่ออกใหม่จะ "ไม่มีผลย้อนหลังเป็นโทษ" ดังนั้น พรบ. คุ้มครองข้อมูลส่วนบุคคล จะไม่มีผลกลับไปบังคับโทษสำหรับการประมวลผลข้อมูลส่วนบุคคล ซึ่งดำเนินการมาก่อน 27 พ.ค. 2564 แม้จะเป็นประมวลผลไม่ถูกต้องสอดคล้องกับพรบ. ก็ตาม</p>
+
+                            <p>“ข้อมูล (DATA)” กลายเป็นสิ่งสำคัญในยุคที่ต้องเข้าใจพฤติกรรมผู้บริโภคให้มากที่สุด เพื่อให้สามารถตอบสนองความต้องการผู้บริโภคได้เป็นรายๆ ไป แต่หลายครั้งที่พบว่าข้อมูลมักจะรั่วไหลเห็นได้จากที่หลายคนมักจะพบว่า มีเบอร์แปลกๆ โทรเข้ามาเพื่อเสนอขายสินค้าและบริการต่างๆ มากมาย ทั้งที่ยังไม่เคยติดต่อหรือให้เบอร์ใครไป ร้ายแรงที่สุดคือการนำข้อมูลไปแอบอ้างเพื่อกระทำความผิดทางกฎหมาย</p>
+
+                           
+
+                            <p>ปัจจุบันมีการประกาศ <strong>พระราชบัญญัติ (พ.ร.บ.) คุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562</strong> โดยมีการประกาศในราชกิจจานุเบกษาเมื่อวันที่ 27 พฤษภาคม พ.ศ.2562 ซึ่งสาระสำคัญที่หลายองค์กรต้องพึงระวังในด้านการจัดเก็บข้อมูลตามที่บัญญัติไว้ใน พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562 โดยสรุปมีดังนี้</p>
+
+                           
+
+
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> องค์กรทั้งภาครัฐและเอกชนที่ดำเนินการจัดเก็บข้อมูล จะต้องมีระบบ แผนงานหรือเจ้าหน้าที่ในการรักษาความมั่นคงปลอดภัยของข้อมูลตามมาตรฐาน ไม่ว่าองค์กรนั้นจะอยู่ในประเทศไทยหรือนอกประเทศไทยก็ตาม</li>
+                                <li><i class="fas fa-check"></i> ต้องได้รับการยินยอมจากเจ้าของข้อมูล ไม่ว่าจะเป็นการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูล โดยต้องขอความยินยอมจากเจ้าของข้อมูลอย่างชัดเจน และต้องไม่มีเงื่อนไขในการขอความยินยอมจากเจ้าของข้อมูล</li>
+                                <li><i class="fas fa-check"></i> เจ้าของข้อมูลสามารถถอนความยินยอมเมื่อไหร่ก็ได้ โดยไม่มีข้อแม้หรือเงื่อนไข เว้นแต่จะมีข้อจำกัดสิทธิทางกฎหมายหรือสัญญาที่ให้ประโยชน์แก่เจ้าของข้อมูล</li>
+                                <li><i class="fas fa-check"></i> แม้จะมีการถอนความยินยอมแล้ว ผู้ที่เก็บรวบรวมข้อมูลยังคงต้องดูแลรักษาความปลอดภัยข้อมูลเหล่านั้นไว้ หากการถอนความยินยอมส่งผลกระทบต่อเจ้าของข้อมูล องค์กรที่เก็บรวบรวมข้อมูลต้องแจ้งให้เจ้าของข้อมูลทราบถึงผลกระทบจากการถอนความยินยอมนั้น</li>
+                                <li><i class="fas fa-check"></i> กรณีที่เป็นเด็กอายุไม่เกิน 10 ปี ต้องได้รับความยินยอมจาก “ผู้ปกครอง” กรณีบุคคลไร้ความสามารถต้องได้รับความยินยอมจาก “ผู้อนุบาล” และกรณีบุคคลเสมือนไร้ความสามารถต้องได้รับความยินยอมจาก “ผู้พิทักษ์” โดยทั้งผู้ปกครอง, ผู้อนุบาล และผู้พิทักษ์สามารถถอนความยินยอมแทนเจ้าของข้อมูลนั้นได้</li>
+
+                                <li><i class="fas fa-check"></i> การเก็บข้อมูลต้องเก็บเฉพาะเท่าที่จำเป็น โดยต้องแจ้งรายละเอียดการเก็บข้อมูลให้เจ้าของข้อมูลทราบก่อนหรือระหว่างการจัดเก็บข้อมูล</li>
+
+                                <li><i class="fas fa-check"></i> ห้ามการจัดเก็บรวบรวมข้อมูลจากแหล่งอื่นที่ไม่ใช่จากเจ้าของข้อมูลโดยตรง</li>
+
+                                <li><i class="fas fa-check"></i> ห้ามมีการจัดเก็บข้อมูลชีวภาพ ลักษณะเด่นทางกายภาพ หรือลักษณะเด่นทางพฤติกรรมที่สามารถยืนยันตัวตนบุคคลนั้นได้ ยกเว้นการเก็บข้อมูลด้านประวัติอาชญากรรม</li>
+
+                                <li><i class="fas fa-check"></i> เจ้าของข้อมูลมีสิทธิ์เข้าถึงและขอรับสำเนาข้อมูลของตนเองได้ รวมถึงการขอให้เปิดเผยวิธีการได้มาซึ่งข้อมูล โดยที่เจ้าของข้อมูลไม่เคยให้ความยินยอม</li>
+
+                                <li><i class="fas fa-check"></i> เจ้าของข้อมูลมีสิทธิ์ในการลบ ทำลาย หรือทำให้ไม่สามารถระบุตัวตนได้ หากข้อมูลนั้นได้มาไม่ชอบด้วยกฎหมาย</li>
+
+                                <li><i class="fas fa-check"></i> เจ้าของข้อมูลสามารถร้องเรียนได้ ในกรณีที่การเก็บรวบรวมข้อมูลไม่เป็นไปตามที่ พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562 กำหนดไว้</li>
+
+                                <li><i class="fas fa-check"></i> ผู้เก็บรวบรวมข้อมูลจะต้องชำระค่าสินไหมทดแทนแก่เจ้าของข้อมูล หากจงใจหรือประมาทจนเป็นเหตุทำให้ข้อมูลส่วนบุคคลของเจ้าของข้อมูลรั่วไหล เว้นแต่จะเกิดจากเหตุสุดวิสัย หรือเป็นคำสั่งของเจ้าหน้าที่ตามกฎหมาย</li>
+
+                                <li><i class="fas fa-check"></i> ผู้เก็บรวบรวมข้อมูลที่ทำให้เกิดความเสียหาย เสื่อมเสียชื่อเสียง ถูกดูหมิ่น ถูกเกลียดชัง หรือทำให้ได้รับความอับอาย ต้องระวางโทษจำคุกไม่เกิน 6 เดือน ปรับไม่เกิน 500,000 บาทหรือทั้งจำทั้งปรับ หากนำข้อมูลเหล่านั้นไปแสวงหาผลประโยชน์โดยมิชอบ จะต้องระวางโทษจำคุกไม่เกิน 1 ปี ปรับไม่เกิน 1 ล้านบาท หรือทั้งจำทั้งปรับ</li>
+
+                                <li><i class="fas fa-check"></i> ใครที่ล่วงรู้ข้อมูลส่วนบุคคลของผู้อื่นแล้วนำไปเปิดเผยต่อผู้อื่น โดยที่ไม่ได้รับอนุญาตทางกฎหมาย ต้องระวางโทษจำคุกไม่เกิน 6 เดือน ปรับไม่เกิน 500,000 บาท หรือทั้งจำทั้งปรับ</li>
+
+                            </ul>
+
+
+                            <p>สำหรับ <strong>ข้อมูลที่เก็บรวบรวมไว้ตั้งแต่ก่อน 27 พ.ค. 2564 พรบ.</strong> กำหนดหลักเกณฑ์ที่ผู้ควบคุมข้อมูล (Data Controller) ต้องดำเนินการกับข้อมูลส่วนบุคคลดังกล่าวภายใต้แนวทางดังนี้</p>
+
+                            <p>หากเป็นการประมวลผลข้อมูลด้วยฐานอันชอบด้วยกฎหมายอื่น ที่ไม่ใช่ฐานการขอความยินยอม ผู้ควบคุมข้อมูลสามารถประมวลผลข้อมูลด้วยวัตถุประสงค์เดิมได้อยู่ แต่ต้องแจ้งให้เจ้าของข้อมูล ทราบเกี่ยวกับการประมวลผลข้อมูลดังกล่าว เช่น การทำ Privacy Notice และส่ง E-mail ไปแจ้ง</p>
+
+                            <p>หากเป็นการประมวลผลข้อมูลด้วยฐานความยินยอม ผู้ควบคุมข้อมูล (Data Controller) ต้องตรวจสอบว่า เจ้าของข้อมูลเคยให้ความยินยอมในการประมวลผลข้อมูลแก่ผู้ควบคุมข้อมูล (Data Controller) ในลักษณะใดไว้หรือไม่ </p>
+
+                            <p><strong>หากเคย</strong> ผู้ควบคุมข้อมูลต้องแจ้งการให้ความยินยอมที่ผ่านมาให้เจ้าของข้อมูลทราบ และให้สิทธิเจ้าของข้อมูลในการถอนความยินยอมได้ (Opt-Out)</p>
+
+                            <p><strong>หากไม่เคย</strong> ผู้ควบคุมข้อมูลต้องขอความยินยอมในการประมวลผลข้อมูลดังกล่าวจากเจ้าของข้อมูลเป็นการเฉพาะภายใต้พรบ. จึงจะสามารถประมวลผลข้อมูลดังกล่าวได้ (Opt-In)</p>
+
+                            <p>เจ้าของข้อมูล (Data Subject) ซึ่งหมายถึงบุคคลธรรมดาที่เป็นเจ้าของข้อมูลส่วนบุคคลซึ่งภาคธุรกิจประมวลผลมีสิทธิควบคุมการประมวลผลข้อมูลดังกล่าวได้มากขึ้น และมีสิทธิเรียกร้องหากพบกรณีที่ภาคธุรกิจทำให้ตนเองได้รับความเสียหายได้ด้วยบทลงโทษที่หนักขึ้น ดังนี้‍ </p>
+
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i>  มีสิทธิขอเข้าถึงขอสำเนา ขอให้มีการโอนถ่ายข้อมูล ขอคัดค้านและระงับการประมวลผลข้อมูล ขอให้ลบหรือทำลายข้อมูลส่วนบุคคลหรือสิทธิในการเลือกให้หรือถอนความยินยอมอย่างอิสระ</li>
+                                <li><i class="fas fa-check"></i> กรณีได้รับความเสียหาย สามารถฟ้องได้ทั้งทางแพ่ง ทางอาญา และทางปกครอง</li>
+                                <li><i class="fas fa-check"></i> บริษัทในภาคธุรกิจในฐานะผู้ควบคุมข้อมูลยังสามารถประมวลผลข้อมูลส่วนบุคคลเพื่อการดำเนินธุรกิจของตนได้เช่นเดิม แต่ต้องใช้ความระมัดระวัง และมีกรอบที่ต้องปฏิบัติตามที่ชัดเจนมากขึ้น ดังนี้</li>
+                                <li><i class="fas fa-check"></i> ต้องจำกัดการประมวลผลข้อมูลส่วนบุคคล เพียงเท่าที่จำเป็น</li>
+                                <li><i class="fas fa-check"></i> การประมวลผลข้อมูลต้องมีวัตถุประสงค์ ซึ่งมีฐานกฎหมายตามที่ พรบ. กำหนดรองรับ เช่น เป็นการปฏิบัติหน้าที่ตามกฎหมาย  ปฏิบัติหน้าที่ตามสัญญา สิทธิอันชอบธรรม และหากเป็นการประมวลผลด้วยฐานความยินยอม ต้องได้รับความยินยอมก่อน</li>
+                                <li><i class="fas fa-check"></i> ต้องอธิบาย และแจ้งรายละเอียดการประมวลผลข้อมูลส่วนบุคคลให้เจ้าของข้อมูลทราบ </li>
+                                <li><i class="fas fa-check"></i> ต้องรับประกันความมั่นคงปลอดภัยของข้อมูล</li>
+                            </ul>
+
+                            <h3>ในส่วนของบทกำหนดโทษมีข้อสรุปดังนี้</h3>
+                            <p>ก่อนมีพรบ. ในกรณีที่เจ้าของข้อมูลได้รับความเสียหายอันเกี่ยวเนื่องจากการประมวลผลข้อมูลส่วนบุคคล เจ้าของข้อมูลสามารถฟ้องร้องผู้กระทำผิดดังกล่าวซึ่งหมายถึง ตัวบุคคล หรือนิติบุคคลใดหนึ่งที่เป็นผู้กระทำการดังกล่าวได้โดยตรง โดยการดำเนินคดีเป็น 2 ลักษณะ คือ ฟ้องคดีแพ่งและฟ้องคดีอาญา </p>
+                            <p>หลังมีพรบ. เจ้าของข้อมูลที่ได้รับความเสียหายจะได้รับประโยชน์ความคุ้มครองในการเรียกร้องสิทธิมากขึ้น ด้วยการดำเนินคดีเป็น 3 ลักษณะ โดยเป็นการดำเนินคดีกับองค์กรผู้ควบคุมข้อมูลทั้งองค์กร ไม่ใช่เพียงบุคคลใดบุคคลหนึ่งที่กระทำผิด คือ</p>
+
+                            <div>
+                                <img class="img-fluid" src="assets/img/news1.png" alt="">
+                            </div>
+
+                            <h3>Privacy Notice vs Terms of Services</h3>
+                            <p>ทุกครั้งที่สมัครบัญชีผู้ใช้งาน หรือสมัครสมาชิก รวมถึงใช้บริการทางออนไลน์ผ่านหน้าเว็บไซต์ หรือ Application ต่างๆ ในตอนท้ายก่อนทำรายการ จะมีกล่องข้อความให้กดยินยอมเอกสาร 2 ฉบับอยู่ เสมอ คือ “เงื่อนไขการให้บริการ” (Terms of Services) และ “นโยบายข้อมูลส่วนบุคคล” (Privacy Notice) เอกสารทั้งสองฉบับถูกสร้างขึ้นด้วยจุดประสงค์ที่แตกต่างกัน แต่ต้องใช้คู่กัน</p>
+
+                            <h3>Terms of Services </h3>
+                            <p>เป็นเอกสารที่อธิบายถึงขอบเขตการให้บริการ ที่ภาคธุรกิจให้แก่ผู้ใช้บริการ เงื่อนไขข้อจำกัดความรับผิดต่างๆของผู้ให้บริการดังกล่าว รวมถึง การกำหนดข้อห้ามในการใช้บริการไว้ สำหรับเอกสารนี้กฎหมายไม่ได้กำหนดให้ต้องทำและไม่มีแบบ</p>
+
+                            <h3>Privacy Notice  </h3>
+                            <p>เป็นเอกสารที่ภาคธุรกิจ ในฐานะ ผู้ควบคุมข้อมูล มีหน้าที่ต้องแจ้งให้ผู้ใช้บริการ ในฐานะเจ้าของข้อมูล ได้ทราบเกี่ยวกับการประมวลผลข้อมูลที่จะดำเนินการ โดย พรบ. กำหนดเป็นหน้าที่ที่ต้องทำ และกำหนดหัวข้อที่ต้องเขียนในเอกสารไว้</p>
+
+                            <p>ความเชื่อมโยงระหว่าง 2 เอกสารคือ "Terms of Services" เป็นเอกสารที่บอกถึงการให้บริการซึ่งแสดงหน้าที่ตามสัญญาที่ผู้ควบคุมข้อมูลต้องให้แก่เจ้าของข้อมูล ซึ่งหากผู้ควบคุมข้อมูลมีความจำเป็นต้องประมวลผลข้อมูลส่วนบุคคลส่วนใด เพื่อการปฏิบัติหน้าที่ตามที่ระบุไว้ใน Terms of Services ย่อมเป็นกรณีที่ผู้ควบคุมมีสิทธิประมวลข้อมูลดังกล่าวได้ด้วยฐานการปฏิบัติหน้าที่ตามสัญญา ซึ่งถือเป็นฐานการประมวลผลที่ พรบ. อนุญาตรองรับ และผู้ควบคุมข้อมูลมีเพียงหน้าที่แจ้งการ ประมวลผลดังกล่าวลงใน "Privacy Notice" เท่านั้น ไม่ต้องขอ Consent</p>
+
+                            <p>กรณีการประมวลผลข้อมูลส่วนบุคคลด้วยฐานความยินยอม ผู้ควบคุมข้อมูลต้องขอความยินยอม จากเจ้าของข้อมูลก่อนการประมวลผลข้อมูลดังกล่าว โดยต้องดำเนินการ ดังนี้</p>
+
+                            <div>
+                                <img class="img-fluid" src="assets/img/news2.png" alt="">
+                            </div>
+                            <p>จะเห็นได้ว่า พรบ. คุ้มครองข้อมูลส่วนบุลคล (PDPA) ฉบับใหม่นี้ได้เพิ่มความคุ้มครองและความปลอดภัยในการเข้าถึงข้อมูล โดยที่ต้องได้รับการยินยอมจากเจ้าของข้อมูล รวมทั้งสามารถปฏิเสธการให้ข้อมูลได้ รวมทั้งการเพิ่มบทลงโทษให้ครอบคลุมถึงการฟ้องทั้งทางแพ่ง อาญาและปกครอง ต่อกรรมการหรือผู้จัดการที่กระทำผิดเกี่ยวข้องโดยตรง</p>
+                            <p>ในตอนต่อไปจะพูดถึง พรบ. คุ้มครองข้อมูลส่วนบุคคล ที่ใกล้ตัวเรามากขึ้น เช่น การขอใช้สิทธิ์ของเจ้าของข้อมูลเพื่อลบข้อมูลจะต้องลบทุกกรณีหรือไม่? การลงนามในสัญญารักษาความลับ (Non-Disclosure Agreement : NDA) เพียงพอแล้วหรือยัง? หรือ Cookies Policy ในการเข้าเว็บไซต์ต่าง ๆ ของเราในแต่ละครั้งสำคัญอย่างไร?</p>
+                        </div>
+
+                        <!-- <div class="article-footer">
+                            <div class="article-tags">
+                                <span><i class="fas fa-bookmark"></i></span>
+
+                                <a href="#">Dragonsmove</a>
+                                
+                            </div>
+
+                            <div class="article-share">
+                                <ul class="social">
+                                    <li><span>Share:</span></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div> -->
+
+                        <div class="sharethis-inline-share-buttons mt-4"></div>
+
+                        
+
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Start Footer Section -->
+    <section class="footer-section ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-area">
+                        <div class="footer-heading">
+                            <h3>Dragons Move</h3>
+                        </div>
+
+                        <p> <span lang="en">“Never be a prisoner of your past. It was just a lesson, not a life sentence”</span>  <span lang="th">“อย่ากักขังตัวเองไว้กับอดีต เพราะมันเป็นแค่บทเรียน ไม่ใช่ตัวตัดสินชีวิต”
+                        </span></p>
+
+                        <div>
+                            <a class="text-white" target="_blank" href="http://www.luangta.com/">http://www.luangta.com/</a>
+                        </div>
+                        <!-- <ul class="footer-social">
+                            <li>
+                                <a href="#" class="bg-3955bc">
+                                    <i class="flaticon-facebook-logo"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="bg-1da1f2">
+                                    <i class="flaticon-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="bg-004dff">
+                                    <i class="flaticon-paypal"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="bg-0273af">
+                                    <i class="flaticon-linkedin-letters"></i>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-item-area">
+                        <div class="footer-heading">
+                            <h3><span lang="en">Info Links</span> <span lang="th">ลิงค์ข้อมูลในเว็บไซต์</span></h3>
+                        </div>
+
+                        <ul class="footer-quick-links">
+                            <li><a href="about.html"> <span lang="en">About Us</span> <span lang="th">เกี่ยวกับเรา</span></a></li>
+                            <li><a href="vpn-solutions.html"> <span lang="en">Services</span> <span lang="th">บริการของเรา</span> </a></li>
+                            <li><a href="partnership.html"> <span lang="en">Partnership</span> <span lang="th">พันธมิตรของเรา</span></a></li>
+                            <li><a href="contact.html"> <span lang="en">Contact Us</span> <span lang="th">ติดต่อเรา</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-item-area">
+                        <div class="footer-heading">
+                            <h3><span lang="en">Featured Service</span> <span lang="th">บริการของเรา</span></h3>
+                        </div>
+
+                        <ul class="footer-quick-links">
+                            <li><a href="vpn-solutions.html">VPN Solutions</a></li>
+                            <li><a href="system-solution.html">Monitoring System Solution</a></li>
+                            <li><a href="vulnerability-assessment.html">Vulnerability Assessment</a></li>
+                            <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                            <li><a href="secure-code-review.html">Security Solutions </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-heading">
+                        <h3><span lang="en">Contact</span> <span lang="th">ติดต่อเรา</span></h3>
+                    </div>
+
+                    <div class="footer-info-contact">
+                        <i class="flaticon-call-answer"></i>
+                        <span>02-7363034</span>
+                    </div>
+
+                    <div class="footer-info-contact">
+                        <i class="flaticon-envelope"></i>
+                        <span><a href="#"> info@dragonsmove.com</a></span>
+                    </div>
+
+                    <div class="footer-info-contact">
+                        <i class="flaticon-placeholder-filled-point"></i>
+                        <span lang="en">Dragons Move Co.,Ltd.
+                            72 Ramkhamhaeng 26/1, Hua-Mak,
+                             Bangkapi, Bangkok, Thailand, 10240</span>
+                             <span lang="th">บริษัท ดราก้อนมู้ฟ จํากัด
+                                เลขที่ 72 รามคําแหง ซอย 26/1 แขวงหัวหมาก เขตบางกะปิ จังหวัดกรุงเทพ 10240</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="default-animation">
+            <div class="shape-img1"><img src="assets/img/shape/12.svg" alt="image"></div>
+            <div class="shape-img2"><img src="assets/img/shape/13.svg" alt="image"></div>
+            <div class="shape-img3"><img src="assets/img/shape/14.png" alt="image"></div>
+            <div class="shape-img4"><img src="assets/img/shape/15.png" alt="image"></div>
+            <div class="shape-img5"><img src="assets/img/shape/2.png" alt="image"></div>
+        </div> -->
+    </section>
+    <!-- End Footer Section -->
+    <!-- Start Copy Right Section -->
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center col-md-12">
+                    <p>
+                        <i class="far fa-copyright"></i>
+                        2020  All Rights Reserved by <a href="#" target="_blank">Dragonsmove</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Copy Right Section -->
+    <div class="mobile-menu">
+        <ul class="list-unstyled">
+            <div class="close">
+                <i onclick="openMneu()" class="fa fa-times  fa-spin"></i>
+            </div>
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i> Home </a></li>
+            <li><a href="about.html"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+
+            <div id="accordion">
+                <li><a data-toggle="collapse" href="#collapseOne"><i class="fa fa-angle-double-right"></i> Network
+                        Solutions</a></li>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body p-0">
+                        <li><a href="vpn-solutions.html"> VPN Solutions</a></li>
+                        <li><a href="system-solution.html"> Monitoring System
+                                Solution</a></li>
+                    </div>
+                </div>
+                <li><a data-toggle="collapse" href="#collapsetwo"><i class="fa fa-angle-double-right"></i> Security
+                        Solutions</a></li>
+                <div id="collapsetwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body p-0">
+                        <li><a href="vulnerability-assessment.html"> Vulnerability
+                            Assessment</a></li>
+                        <li><a href="penetration-testing.html"> Penetration
+                            Testing</a></li>
+                        <li><a href="web-application-penetration-testing.html"> Web
+                            Application Penetration Testing</a></li>
+                        <li><a href="mobile-application-penetration-testing.html"> Mobile
+                            Application Penetration Testing</a></li>
+                        <li><a href="secure-code-review.html"> Secure Code
+                            Review</a></li>
+
+                    </div>
+                </div>
+                <li><a data-toggle="collapse" href="#collapsethree"><i class="fa fa-angle-double-right"></i> Application
+                        Technologies
+                    </a></li>
+                <div id="collapsethree" class="collapse" data-parent="#accordion">
+                    <div class="card-body p-0">
+                        <li><a href="appkeelaa.html"> AppKeelaa
+                            </a></li>
+                    </div>
+                </div>
+            </div>
+
+            <li>
+                <a href="news.html" class="nav-link"><i class="fa fa-angle-double-right"></i> News & Activities</a>
+            </li>
+            <li><a href="partnership.html"><i class="fa fa-angle-double-right"></i> Partnership</a></li>
+            <li><a href="jobs.html"><i class="fa fa-angle-double-right"></i> Jobs</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+
+            
+        </ul>
+    </div>
+    <!-- Start Go Top Section -->
+    <div class="go-top">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- jQuery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper Min JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- MeanMenu JS  -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Appear Min JS -->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!-- Odometer Min JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select Min JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Mixitup Min JS -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <!-- WOW Min JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Parallax Min JS -->
+    <script src="assets/js/parallax.min.js"></script>
+    <!-- Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openMneu() {
+            $('.mobile-menu').toggle("slide");
+        }
+    </script>
+    
+</body>
+
+</html>

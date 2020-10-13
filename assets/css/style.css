@@ -8333,3 +8333,17 @@ p[lang="th"] {
   display: inline-table;
   cursor: pointer;
 }
+
+#introModal .modal-content {
+  border-radius: 11px;
+  background: transparent;
+}
+#introModal .modal-body img{
+  border-radius: 11px;
+}
+#introModal .modal-content .close i{
+  opacity: 1;
+  background: #fff;
+  border-radius: 50%;
+}
+

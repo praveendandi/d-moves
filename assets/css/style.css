@@ -8502,3 +8502,6 @@ p[lang="th"] {
 }
 
 .main-timeline ul li{list-style: none;font-size: 13px;}
+
+.home-news .table td, .home-news .table th{border: 0;font-weight: 400;white-space: nowrap;}
+.home-news .readmore{text-decoration: underline;}

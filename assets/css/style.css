@@ -8332,6 +8332,7 @@ p[lang="th"] {
   font-size: 12px;
   display: inline-table;
   cursor: pointer;
+  height: max-content;
 }
 
 #introModal .modal-content {
